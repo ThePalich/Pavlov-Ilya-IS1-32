@@ -1,0 +1,9 @@
+﻿<Application x:Class="Доеду_сам.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Доеду_сам"
+             StartupUri="Insert.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

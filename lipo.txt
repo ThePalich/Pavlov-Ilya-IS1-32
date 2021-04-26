@@ -1,0 +1,11 @@
+private void card_01_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataTable dt_product = Select("SELECT * FROM Product");
+            for (int i = 0; i < dt_product.Rows.Count; i++)
+            {
+                card_01.Title.Text = dt_product.Rows[i][1].ToString();
+                card_01.Description.Text = dt_product.Rows[i][3].ToString();
+                card_01.Price.Text = dt_product.Rows[i][2].ToString();
+
+            }
+        }

@@ -1,0 +1,27 @@
+﻿<Window x:Class="Доеду_сам.ProductPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Доеду_сам"
+        mc:Ignorable="d"
+        Title="ProductPage" Height="471" Width="530.099">
+    <Grid Margin="0,0,2,-1">
+        <Label Content="Id" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,10,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A"/>
+        <Label Content="Cost" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,118,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A" />
+        <Label Content="Title" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,64,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A" />
+        <Label Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,172,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A" />
+        <Label Content="MainImagePath" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,231,0,0" RenderTransformOrigin="0.495,0.538" FontFamily="Tw Cen MT" Foreground="#FF9C1A"/>
+        <Label Content="Product Creator" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,290,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A"/>
+        <TextBox x:Name="Id" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Auto-increment" VerticalAlignment="Top" Width="261" Margin="216,36,0,0" IsEnabled="False" FontFamily="Tw Cen MT" Foreground="#FF9C1A"/>
+        <TextBox x:Name="Titl" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" Margin="216,90,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A"/>
+        <TextBox x:Name="Cst" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" Margin="216,144,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A"/>
+        <TextBox x:Name="Desc" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" Margin="216,203,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A" />
+        <TextBox x:Name="imgpath" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" Margin="216,262,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A"/>
+        <TextBox x:Name="ProCre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="261" Margin="216,316,0,0" FontFamily="Tw Cen MT" Foreground="#FF9C1A"/>
+        <Button Content="На основную" HorizontalAlignment="Left" Margin="388,391,0,0" VerticalAlignment="Top" Width="89" Height="23" Click="Button_Click" FontFamily="Tw Cen MT" Background="#FFFFFFe1" Foreground="#FF9C1A"/>
+        <CheckBox Content="IsActive" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="216,349,0,0" Foreground="#FF9C1A" x:Name="Active"/>
+        <Image x:Name="addImgae" HorizontalAlignment="Left" Height="247" Margin="10,36,0,0" VerticalAlignment="Top" Width="201" Source="Patrick.jpg" />
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="216,391,0,0" VerticalAlignment="Top" Width="89" Height="23" Click="Button_Click" FontFamily="Tw Cen MT" Background="#FFFFFFe1" Foreground="#FF9C1A"/>
+    </Grid>
+</Window>

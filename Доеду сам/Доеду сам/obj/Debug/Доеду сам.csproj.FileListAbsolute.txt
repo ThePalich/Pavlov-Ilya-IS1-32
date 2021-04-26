@@ -1,0 +1,18 @@
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\bin\Debug\Доеду сам.exe.config
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\bin\Debug\Доеду сам.exe
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\bin\Debug\Доеду сам.pdb
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Доеду сам.csprojAssemblyReference.cache
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\MainWindow.g.cs
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\App.g.cs
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Доеду сам_MarkupCompile.cache
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Доеду сам_MarkupCompile.lref
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\MainWindow.baml
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Доеду сам.g.resources
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Доеду_сам.Properties.Resources.resources
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Доеду сам.csproj.GenerateResource.cache
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Доеду сам.exe
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Доеду сам.pdb
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Insert.g.cs
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\Insert.baml
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\ProductPage.g.cs
+D:\Павлов ИС1-32\NEW SESSIA\Доеду сам\Доеду сам\obj\Debug\ProductPage.baml

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A99867E0-F8E7-48B3-B4D5-D68BA929F270}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Доеду_сам</RootNamespace>
+    <AssemblyName>Доеду сам</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Павлов ИС1-32\NEW SESSIA\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Insert.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connect.cs" />
+    <Compile Include="Insert.xaml.cs">
+      <DependentUpon>Insert.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ProductPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProductPage.xaml.cs">
+      <DependentUpon>ProductPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Patrick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="0070C563.jpg" />
+    <Resource Include="022096CB.jpg" />
+    <Resource Include="03D096CB.jpg" />
+    <Resource Include="0D30C4EE.jpg" />
+    <Resource Include="0D60A8A4.jpg" />
+    <Resource Include="0DF0A8A4.jpg" />
+    <Resource Include="21B0E533.jpg" />
+    <Resource Include="23106A35.jpg" />
+    <Resource Include="2390848B.jpg" />
+    <Resource Include="23F0848B.jpg" />
+    <Resource Include="27B0C883.jpg" />
+    <Resource Include="2A109062.jpg" />
+    <Resource Include="2B009062.jpg" />
+    <Resource Include="2B609062.jpg" />
+    <Resource Include="2D709062.jpg" />
+    <Resource Include="2E00E06C.jpg" />
+    <Resource Include="2E30E06C.jpg" />
+    <Resource Include="2E60E06C.jpg" />
+    <Resource Include="30E0C751.jpg" />
+    <Resource Include="3760D73F.jpg" />
+    <Resource Include="3970E753.jpg" />
+    <Resource Include="39A0C188.jpg" />
+    <Resource Include="39D0C188.jpg" />
+    <Resource Include="3B70C57C.jpg" />
+    <Resource Include="3DA0B713.jpg" />
+    <Resource Include="3DF0E4BC.jpg" />
+    <Resource Include="40409946.jpg" />
+    <Resource Include="43909176.jpg" />
+    <Resource Include="43C09176.jpg" />
+    <Resource Include="43E08C52.jpg" />
+    <Resource Include="45008C52.jpg" />
+    <Resource Include="45908C52.jpg" />
+    <Resource Include="47E07CB5.jpg" />
+    <Resource Include="5180B90E.jpg" />
+    <Resource Include="5250C855.jpg" />
+    <Resource Include="54B0795D.jpg" />
+    <Resource Include="59B0BE73.jpg" />
+    <Resource Include="5A30A7EE.jpg" />
+    <Resource Include="5BB0C351.jpg" />
+    <Resource Include="5BE0C351.jpg" />
+    <Resource Include="6080DCD5.jpg" />
+    <Resource Include="63C09E91.jpg" />
+    <Resource Include="6730A31C.jpg" />
+    <Resource Include="6800BB8A.jpg" />
+    <Resource Include="69C0CD62.jpg" />
+    <Resource Include="6CA0BE73.jpg" />
+    <Resource Include="6CE0A012.jpg" />
+    <Resource Include="6DA0A012.jpg" />
+    <Resource Include="6DD0A012.jpg" />
+    <Resource Include="7B70B9C6.jpg" />
+    <Resource Include="8430842A.jpg" />
+    <Resource Include="85C04040.jpg" />
+    <Resource Include="8BC0C1A9.jpg" />
+    <Resource Include="8E20A863.jpg" />
+    <Resource Include="8F609ED7.jpg" />
+    <Resource Include="8F909ED7.jpg" />
+    <Resource Include="8FE07916.jpg" />
+    <Resource Include="90505D31.jpg" />
+    <Resource Include="90A0B807.jpg" />
+    <Resource Include="90D0B807.jpg" />
+    <Resource Include="9290C1E7.jpg" />
+    <Resource Include="92C0C1E7.jpg" />
+    <Resource Include="9380C1E7.jpg" />
+    <Resource Include="96E0C1E7.jpg" />
+    <Resource Include="9750DA76.jpg" />
+    <Resource Include="97809225.jpg" />
+    <Resource Include="9B3075EB.jpg" />
+    <Resource Include="AD00B713.jpg" />
+    <Resource Include="B0A0C186.jpg" />
+    <Resource Include="B0F0CB59.jpg" />
+    <Resource Include="B590AA7B.jpg" />
+    <Resource Include="B790A6AA.jpg" />
+    <Resource Include="BA30C186.jpg" />
+    <Resource Include="BD80E8D5.jpg" />
+    <Resource Include="C310B9F3.jpg" />
+    <Resource Include="C9C0F036.jpg" />
+    <Resource Include="CC10C869.jpg" />
+    <Resource Include="CC40C869.jpg" />
+    <Resource Include="D0D08F32.jpg" />
+    <Resource Include="D2508F32.jpg" />
+    <Resource Include="D4D0CE67.jpg" />
+    <Resource Include="D9605006.jpg" />
+    <Resource Include="DC70BEC3.jpg" />
+    <Resource Include="E0A0E079.jpg" />
+    <Resource Include="E0D0E079.jpg" />
+    <Resource Include="E320BB7C.jpg" />
+    <Resource Include="E3A0B18A.jpg" />
+    <Resource Include="E5507A37.jpg" />
+    <Resource Include="E9308929.jpg" />
+    <Resource Include="EF80D790.jpg" />
+    <Resource Include="EFC05011.jpg" />
+    <Resource Include="F160E078.jpg" />
+    <Resource Include="F200BC2F.jpg" />
+    <Resource Include="F2B0E078.jpg" />
+    <Resource Include="F2E0E078.jpg" />
+    <Resource Include="F310E078.jpg" />
+    <Resource Include="F460E078.jpg" />
+    <Resource Include="F490E078.jpg" />
+    <Resource Include="F8E0B138.jpg" />
+    <Resource Include="FA90B138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Товары автосервиса\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
